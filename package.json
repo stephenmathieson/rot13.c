@@ -1,6 +1,6 @@
 {
   "name": "rot13",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repo": "stephenmathieson/rot13.c",
   "description": "Simple ROT13",
   "keywords": [ "rot13", "rotate", "encryption" ],
