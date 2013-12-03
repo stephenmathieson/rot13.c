@@ -1,6 +1,6 @@
 
 #include "describe.h"
-#include "../src/rot13.h"
+#include "rot13.h"
 
 int main(int argc, char **argv) {
 
