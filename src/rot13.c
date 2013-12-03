@@ -9,7 +9,13 @@
 #include "rot13.h"
 
 /*
- * Rotate the given `str` inline
+ * Magic number.
+ */
+
+#define ROT13_MODIFIER 13
+
+/*
+ * Rotate the given `str` inline.
  */
 
 char *rot13(char *str) {
@@ -17,10 +23,10 @@ char *rot13(char *str) {
     char c = *(str + i);
     if (('a' <= c && 'n' > c) || ('A' <= c && 'N' > c)) {
       // a-m
-      *(str + i) += 13;
+      *(str + i) += ROT13_MODIFIER;
     } else if (('n' <= c && 'z' >= c) || ('N' <= c && 'Z' >= c)) {
       // n-z
-      *(str + i) -= 13;
+      *(str + i) -= ROT13_MODIFIER;
     }
   }
   return str;
