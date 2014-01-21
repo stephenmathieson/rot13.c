@@ -1,4 +1,3 @@
-
 //
 // rot13.h
 //
@@ -7,8 +6,8 @@
 //
 
 
-#ifndef __ROT13__
-#define __ROT13__ 1
+#ifndef ROT13_H
+#define ROT13_H 1
 
 char *rot13(char *str);
 
